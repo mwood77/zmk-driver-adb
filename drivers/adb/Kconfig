@@ -1,0 +1,12 @@
+menuconfig ADB_GPIO
+    bool "ADB GPIO driver"
+    depends on GPIO
+    default y
+    help
+      A driver for monitoring the ADB pin via GPIO.
+
+config ADB_GPIO_LOG_LEVEL
+    int "Log level for ADB GPIO"
+    depends on ADB_GPIO
+    default 3
+    range 0 4

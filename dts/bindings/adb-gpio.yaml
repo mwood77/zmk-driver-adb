@@ -1,0 +1,9 @@
+description: ADB GPIO Driver
+compatible: "custom,adb-gpio"
+include: base.yaml
+
+properties:
+  gpio:
+    type: phandle-array
+    required: true
+    description: GPIO pin used for ADB data
