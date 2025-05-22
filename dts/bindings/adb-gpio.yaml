@@ -7,3 +7,7 @@ properties:
     type: phandle-array
     required: true
     description: GPIO pin used for ADB data
+  debounce-period-ms:
+    type: int
+    required: false
+    description: Optional debounce period for input changes, in milliseconds
