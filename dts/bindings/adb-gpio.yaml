@@ -3,7 +3,7 @@ compatible: "custom,adb-gpio"
 include: base.yaml
 
 properties:
-  gpio:
+  gpios:
     type: phandle-array
     required: true
     description: GPIO pin used for ADB data

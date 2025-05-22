@@ -49,7 +49,7 @@ static int adb_gpio_init(const struct device *dev)
 
 #define ADB_GPIO_INIT(inst) \
     static const struct adb_gpio_config adb_gpio_config_##inst = { \
-        .gpio = GPIO_DT_SPEC_INST_GET(inst, gpio), \
+        .gpio = GPIO_DT_SPEC_INST_GET(inst, gpios), \
     }; \
     DEVICE_DT_INST_DEFINE(inst, adb_gpio_init, NULL, NULL, \
                           &adb_gpio_config_##inst, \
